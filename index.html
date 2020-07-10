@@ -1,0 +1,72 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/united.bootstrap.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>user info</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span class="navbar-brand">User Details</span>
+            </div>
+        </div>
+    </nav>
+
+       <div class="form-horizontal" id="nameform">
+        <div class="form-group">
+            <label for="forename" class="col-sm-2 control-label">Forename</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="forename" size="20" placeholder="Player Name" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="surname" class="col-sm-2 control-label">Surname</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="surname" size="20" placeholder="Surname" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="nickname" class="col-sm-2 control-label">Nickname</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="nickname" size="20" placeholder="Nickname" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">EmailAddress</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="email" type="email" size="20" placeholder="EmailAddress" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="role" class="col-sm-2 control-label">Role</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="role" type="email" size="20" placeholder="Role" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="isLocked" class="col-sm-2 control-label">Unlock & lock the load info button</label>
+            <div class="col-sm-1">
+                <input  class="form-control" type="checkbox" id="isLocked" size="20"  />
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-primary" id="loadInfo" disabled>Load Info</button>
+                <!-- <button class="btn btn-primary" id="runArray"  onclick="runArrayMethod()" ></button> -->
+            </div>
+        </div>
+    </div>
+       <div class="col-sm-offset-2 col-sm-10" id="messages"> </div>
+   
+
+    <!-- add script tags here -->
+    <script src='bundle.js'></script>
+</body>
+</html>
