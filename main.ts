@@ -22,6 +22,7 @@ else {
       customer.emailAddress = Helpers.getValue('email');
       customer.role = Helpers.getValue('role');
       customer.dateCreated = new Date();
+      console.log(customer.dateCreated);
       customer.firstName();
       customer.fullName();
       sales.customers = [customer.forename, customer.nickname, customer.surname, customer.emailAddress, customer.role];
