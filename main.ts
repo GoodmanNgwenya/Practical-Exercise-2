@@ -1,9 +1,9 @@
 import { Customer } from './customer';
 import * as Helpers from './utility';
-//import { SalesRap } from './salesRap';
+ import { SalesRap } from './salesRap';
 
 const customer: Customer = new Customer();
-//const sales: SalesRap = new SalesRap();
+const sales: SalesRap = new SalesRap();
 document.getElementById('loadInfo')!.addEventListener('click', () => {
   
 var email = (<HTMLInputElement>(document.getElementById('email'))).value
@@ -24,7 +24,9 @@ else {
       customer.dateCreated = new Date();
       customer.firstName();
       customer.fullName();
-    }
+      sales.customers = [customer.forename, customer.nickname, customer.surname, customer.emailAddress, customer.role];
+      console.log(sales.customers);
+  }
 
 }
   

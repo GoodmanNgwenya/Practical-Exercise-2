@@ -4,7 +4,7 @@ export class Customer implements User{
   forename!: string;
   surname!: string;
   nickname?: string;
-  emailAddress!: String;
+  emailAddress!: string;
   role!: string;
   dateCreated!: Date;
   dateRemoved?: Date;
